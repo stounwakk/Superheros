@@ -1,7 +1,7 @@
 import express from 'express'
 
 
-import heroRouter from './routers/superheroRouter.js'
+import {heroRouter} from './routers/superheroRouter.js'
 
 const app = express()
 

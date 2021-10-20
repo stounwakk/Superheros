@@ -18,7 +18,7 @@ class superheroController {
             .catch(e=> res.status(500).json(e))
     }
 
-    async uploadHeroImage(req,res) {
+    uploadHeroImage(req,res) {
         const idx = req.params.id
         const file = req.files
         Superhero.update({heroImage: file[0].path}, {
@@ -44,4 +44,4 @@ class superheroController {
     }
 }
 
-export default new superheroController()
+export {superheroController}
